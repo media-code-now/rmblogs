@@ -1,0 +1,57 @@
+include ../thumbnail/_thumbnail
+include ../post/_post
+
+// Popular News
+section.section-md.bg-primary-lighten
+	.container
+		.row.row-10
+			.col-md-5
+				h2 Popular News
+			.col-md-7
+				p.big From lifestyle tips to useful and simple recipes, my blog encompasses a wide variety of topics and publications. Here are the most popular ones.
+		.row.row-30.row-xl-60.row-xxl-100.row-offset-lg
+			.col-md-4
+				+post-shadow({
+					img:   'popular-news-01-370x257',
+					tag:   'Interior',
+					title: 'Decorating a Modern Bedroom on a Budget',
+					date:  'November 12, 2022'
+				})
+			.col-md-4
+				+post-shadow({
+					img:   'popular-news-02-370x257',
+					tag:   'Relationships',
+					title: 'Top 10 Tips For Building Loving Relationships',
+					date:  'November 12, 2022'
+				})
+			.col-md-4
+				+post-shadow({
+					img:   'popular-news-03-370x257',
+					tag:   'Lifestyle',
+					title: '10 Useful Morning Habits to Start the Day Off Right',
+					date:  'November 12, 2022'
+				})
+
+			.col-md-4
+				+post-shadow({
+					img:   'popular-news-04-370x257',
+					tag:   'Purpose',
+					title: 'Why You Should Plan Your Life on a Decade Level',
+					date:  'November 12, 2022'
+				})
+
+			.col-md-4
+				+post-shadow({
+					img:   'popular-news-05-370x257',
+					tag:   'Food',
+					title: 'Summer Menus and Mood Setters for Hosting at Home',
+					date:  'November 12, 2022'
+				})
+			.col-md-4
+				+post-shadow({
+					img:   'popular-news-06-370x257',
+					tag:   'Sports',
+					title: '35 Home Workout Tips to Maximize Results',
+					date:  'November 12, 2022'
+				})
+

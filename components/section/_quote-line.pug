@@ -1,0 +1,37 @@
+include ../quote/_quote
+
+// Practice
+section.section-md.bg-100
+	.container
+		.row.row-40.justify-content-between.align-items-center
+			.col-md-5
+				.text-block-1
+					h2.text-divider We bring clients a combination of skills & vast experience
+					p.big Combining experience in solving disputes and unique skills, we deliver what our clients need.
+					p.big To have a better understanding about how we solve legal issues of our clients, read these recently submitted testimonials.
+					a.btn.btn-outline( href='#consultation-form', data-anchor-link ) Free Consultation
+			.col-md-7.col-xl-6
+				.layout.layout-3
+					.layout-media.bg-image( style='background-image: url( images/image-16-470x600.jpg )' )
+					.layout-content.bg-900.context-dark
+						.owl-carousel.owl-quote-3( data-owl= { dots: true }, data-items='1' )
+							+quote-line({
+								quote:          'Lawex represented us in a suit against a large company. We were very satisfied with the results. Our settlement was much better than we expected and was completed in a timely and very friendly manner.',
+								authorImg:      'person/person-9-53x53',
+								authorName:     'John Doe',
+								authorPosition: 'Client'
+							})
+
+							+quote-line({
+								quote:          'I received great results when utilizing the legal services of Lawex. They understood my circumstances and with their experience in the legal profession were able to get me the results I wanted.',
+								authorImg:      'person/person-5-53x53',
+								authorName:     'Jane Smith',
+								authorPosition: 'Client'
+							})
+
+							+quote-line({
+								quote:          'Lawex Law Firm were great to work with. Their team set expectations from the beginning and answered my many questions throughout the process. They always took their time to talk to me.',
+								authorImg:      'person/person-10-53x53',
+								authorName:     'Edward Harrison',
+								authorPosition: 'Client'
+							})

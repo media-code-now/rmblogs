@@ -1,0 +1,55 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+@import "../base/mixins";
+
+.box-member {
+	display: flex;
+	width: 530px;
+	max-width: 100%;
+	align-items: center;
+	@include group( 15px );
+
+	@include media-breakpoint-up(sm) {
+		align-items: flex-start;
+	}
+}
+
+.box-member-content {
+	flex-grow: 1;
+	flex-shrink: 0;
+}
+
+.box-member-text-top {
+	@include media-breakpoint-up(sm) {
+		font-size: 17px;
+		margin-top: 140px;
+	}
+}
+
+.box-member-title {
+	* + & {
+		margin-top: 30px;
+
+		@include media-breakpoint-up(sm) {
+			margin-top: 62px;
+		}
+	}
+}
+
+.box-member-figure {
+	display: flex;
+	background-color: $white;
+
+	@include media-breakpoint-up(sm) {
+		flex-shrink: 0;
+	}
+}
+
+.box-member-text {
+	* + & {
+		margin-top: 7px;
+	}
+}

@@ -1,0 +1,59 @@
+-
+	var
+		logo = {
+			default: 'logo-default-400x95.png',
+			inverse: 'logo-inverse-400x95.png',
+			name: 'Royal-Mushroom'
+		},
+		menu = {
+			type: 'root',
+			child: [
+				{ title: 'Popular News' },
+				
+				{
+					title: 'Blog',
+					link: '#',
+					child: {
+						type: 'dropdown',
+						child: [
+							{ title: 'Classic blog' },
+							{ title: 'Grid blog' },
+							{ title: 'Blog post' }
+						]
+					}
+				},
+
+				{
+					title: 'Pages',
+					link: '#',
+					child: {
+						type: 'dropdown',
+						child: [
+							{ title: '404' },
+							{ title: 'Typography' },
+							{ title: 'Coming soon' },
+							{ title: 'Icon boxes' },
+							{
+								title: 'Progress bars',
+								link: 'counters-&-progress-bars.html',
+								id: 'counters'
+							},
+							{ title: 'Search results' },
+							{ title: 'About Me' }
+						]
+					}
+				},
+
+				{ title: 'Contacts' }
+			]
+		},
+		links = {
+			teamMember: 'team-member.html'
+		},
+
+		homePage,
+		pageName,
+		pageId,
+		pageClass= null,
+		htmlClass= null,
+		breadcrumbs = [];

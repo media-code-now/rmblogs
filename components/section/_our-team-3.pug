@@ -1,0 +1,31 @@
+include ../person/_person
+
+// Practice
+section.section-md.bg-transparent
+	.container
+		h2.text-center Meet Our Attorneys
+		.row.row-40.row-offset-md
+			.col-sm-6.col-lg-3
+				+person-simple({
+					img:      'person/person-4-270x288',
+					author:   'Jane Peters',
+					position: 'Business Law'
+				})
+			.col-sm-6.col-lg-3
+				+person-simple({
+					img:      'person/person-2-270x288',
+					author:   'Kate Lee',
+					position: 'Criminal Law'
+				})
+			.col-sm-6.col-lg-3
+				+person-simple({
+					img:      'person/person-5-270x288',
+					author:   'Jill Adams',
+					position: 'Bankruptcy Law'
+				})
+			.col-sm-6.col-lg-3
+				+person-simple({
+					img:      'person/person-3-270x288',
+					author:   'Will Gilmore',
+					position: 'International Law'
+				})

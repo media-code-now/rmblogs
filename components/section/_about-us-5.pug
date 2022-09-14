@@ -1,0 +1,32 @@
+include ../blurb/_blurb
+
+// Practice
+section.section-sm
+	.container
+		.layout.layout-2
+			.layout-media.bg-image( style='background-image: url(images/image-13-837x551.jpg)' )
+			.layout-content.bg-100
+				.text-block-1
+					h2.text-divider We help people tackle serious legal issues of all stripes
+					p.big Our award-winning firm is focused on our clients’ demands for an exceptional legal service model that provides value.
+					.row.row-15.row-xl-25
+						.col-sm-6
+							+blurb-icon-left({
+								iconClass: 'linearicons-library',
+								title:     'Combination of deep industry knowledge'
+							})
+						.col-sm-6
+							+blurb-icon-left({
+								iconClass: 'linearicons-library2',
+								title:     'Experienced court performance'
+							})
+						.col-sm-6
+							+blurb-icon-left({
+								iconClass: 'linearicons-trophy2',
+								title:     'Winners for global legal innovation'
+							})
+						.col-sm-6
+							+blurb-icon-left({
+								iconClass: 'linearicons-shield-check',
+								title:     'Protecting your business interests'
+							})

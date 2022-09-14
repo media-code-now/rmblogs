@@ -1,0 +1,42 @@
+include ../blurb/_blurb
+
+// About us 2
+section.section-double
+	section.section-double-top.section-md.bg-100
+		.container
+			.row.row-5.align-items-center
+				.col-md-6.col-lg-8
+					h2 Main Challenges
+				.col-md-6.col-lg-4
+					.text-primary.text-divider.text-divider-wide.text-small Problems
+			.row.row-30.row-offset-md
+				.col-md-4
+					+blurb-icon-left({
+						iconClass: 'linearicons-library',
+						title: 'Сombination of Deep Industry Knowledge',
+						text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.'
+					})
+				.col-md-4
+					+blurb-icon-left({
+						iconClass: 'linearicons-library2',
+						title: 'Experienced Court Performance',
+						text: 'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam.'
+					})
+				.col-md-4
+					+blurb-icon-left({
+						iconClass: 'linearicons-shield-check',
+						title: 'Protecting Your Business Interests',
+						text: 'Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea com.'
+					})
+
+	section.section-double-bottom.section-md.bg-transparent
+		.container
+			.row.row-30
+				.col-sm-4
+					+img( 'image-2-371x290' ).img-single
+				.col-sm-4
+					+img( 'image-13-371x290' ).img-single
+				.col-sm-4
+					+img( 'image-1-371x290' ).img-single
+
+	include _counter-icon-2

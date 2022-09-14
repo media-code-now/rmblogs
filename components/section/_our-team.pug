@@ -1,0 +1,35 @@
+include ../person/_person
+
+// Our team
+section.section-md.context-dark.bg-darkest
+	.container.container-wide
+		h2.text-center.text-divider.text-divider-center Meet Our Team
+		.row.row-5.row-gutters-5.row-offset-lg.person-poster-container
+			.col-sm-6.col-lg-3
+				+person-poster({
+					img: 'person/person-1-458x538.jpg',
+					author: 'Edward Gray',
+					position: 'Family Law',
+					description: 'Edward is the managing partner of Lawex who specializes in Family Law.'
+				})
+			.col-sm-6.col-lg-3
+				+person-poster({
+					img: 'person/person-2-458x538.jpg',
+					author: 'Kate Lee',
+					position: 'Criminal Law',
+					description: 'Kate is a Junior Managing Partner who has presented 200+ criminal law cases.'
+				})
+			.col-sm-6.col-lg-3
+				+person-poster({
+					img: 'person/person-3-458x538.jpg',
+					author: 'Harry Smith',
+					position: 'Admiralty Law',
+					description: 'Harry is our senior associate with extensive experience in admiralty law.'
+				})
+			.col-sm-6.col-lg-3
+				+person-poster({
+					img: 'person/person-4-458x538.jpg',
+					author: 'Jane Peters',
+					position: 'Business Law',
+					description: 'Jane Peters is the Lawex Associate with professional expertise in business law.'
+				})

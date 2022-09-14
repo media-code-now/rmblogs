@@ -1,0 +1,39 @@
+include ../counter/_counter
+
+// Team member overview
+section.section-md.bg-transparent
+	.container
+		.row.row-30.justify-content-center.justify-content-sm-between
+			.col-8.col-8.col-md-6.col-lg-5.text-center.text-md-start
+				.image-block
+					+img( 'team-member-01-469x565' )
+					.image-block-embed
+						+counter({
+							value: '45',
+							title: 'followers on medium'
+						})
+			.col-md-6
+				h2 Hi, I am Moli Carter
+				p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam sed do eiusmod tempor.
+				.address
+					table
+						tr
+							td.address-title Phone:
+							td.big: a.link.link-inherit( href='tel:#' ) (843) 213-1319
+						tr
+							td.address-title E-Mail:
+							td: a.link.link-inherit( href='mailto:#' ) service@royal-mushroom.com
+						tr
+							td.address-title Address:
+							td 181 Silver Spear Ave, Brooklyn, NY 11223
+				.row.row-content.row-5.h4.fw-medium
+					.col-sm-6
+						ul.list.list-divided.list-divided-sm
+							li.list-item Fashion
+							li.list-item Food
+							li.list-item Interior Design
+					.col-sm-6
+						ul.list.list-divided.list-divided-sm
+							li.list-item Lifestyle
+							li.list-item Relationships
+							li.list-item Sports

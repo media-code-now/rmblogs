@@ -1,0 +1,15 @@
+extends ../components/base/_skeleton
+include ../components/rd-navbar/_rd-navbar-dark
+
+block variables
+	- pageName = 'Home';
+
+block page
+
+	include ../components/section/_intro
+	include ../components/section/_recent-news
+	include ../components/section/_popular-news
+	include ../components/section/_call-to-action
+	include ../components/section/_awards
+
+	include ../components/footer/_footer-subscribe

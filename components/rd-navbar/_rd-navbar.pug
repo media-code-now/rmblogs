@@ -1,0 +1,37 @@
+include _navigation
+include ../blurb/_blurb
+include ../logo/_logo
+
+mixin rd-navbar
+	//RD Navbar
+	header.section.rd-navbar-wrap
+		nav.rd-navbar.rd-navbar-default&attributes( attributes )
+			.navbar-container
+				.navbar-cell
+					.navbar-panel
+						button.navbar-switch.linearicons-menu( data-multi-switch!= {
+							targets: '.rd-navbar',
+							scope:   '.rd-navbar',
+							isolate: '[data-multi-switch]'
+						})
+
+						+logo
+
+				.navbar-cell.navbar-spacer-small
+
+				.navbar-cell
+					+navigation( menu )
+
+				.navbar-cell.navbar-spacer
+				
+				.navbar-cell
+					.navbar-subpanel
+						.navbar-subpanel-item
+							.search-wrap
+								include _search
+								
+								button.navbar-button.search-switch( data-multi-switch!= {
+									targets: '.navbar-search',
+									scope:   '.rd-navbar',
+									class:   'active'
+								})

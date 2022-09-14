@@ -1,0 +1,26 @@
+include ../quote/_quote
+
+// Practice
+section.section-md.bg-900.context-dark
+	.container
+		.owl-carousel.owl-quote( data-owl= { dots: true }, data-items='1' )
+			+quote-large({
+				quote: 'Lawex represented us in a suit against a large company. We were very satisfied with the results. Our settlement was much better than we expected.',
+				authorImg: 'person/person-9-53x53',
+				authorName: 'John Doe',
+				authorPosition: 'Client'
+			})
+
+			+quote-large({
+				quote: 'I received great results when utilizing the legal services of Lawex. They understood my circumstances & were able to get the results I needed.',
+				authorImg: 'person/person-5-53x53',
+				authorName: 'Jane Smith',
+				authorPosition: 'Client'
+			})
+
+			+quote-large({
+				quote: 'Lawex Law Firm were great to work with. Their team set expectations from the beginning and answered my many questions throughout the process.',
+				authorImg: 'person/person-10-53x53',
+				authorName: 'Edward Harrison',
+				authorPosition: 'Client'
+			})

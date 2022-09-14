@@ -1,0 +1,70 @@
+include ../post/_post
+include ../pagination/_pagination
+
+// Blog classic
+section.section-md.bg-transparent
+	.container
+		.row.row-40.justify-content-xxl-between
+			.col-md-8
+				+post-classic({
+					title:    'Why You Should Plan Your Life on a Decade Level',
+					text:     'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam sed do eiusmod tempor. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+					tag:      'Purpose',
+					date:     'April 10, 2022',
+					comments: '0'
+				})
+					a.post-media.post-img( href='blog-post.html' )
+						+img( 'classic-blog-01-769x431' )
+
+				+post-classic({
+					title:    'Decorating a Modern Bedroom on a Budget',
+					text:     'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.',
+					tag:      'Interior',
+					date:     'April 10, 2022',
+					comments: '0'
+				})
+					.owl-carousel.owl-nav-lg( data-owl= { nav: true } )
+						+img( 'classic-blog-02-1-769x431' )
+						+img( 'classic-blog-02-2-769x431' )
+						+img( 'classic-blog-02-3-769x431' )
+
+				+post-classic({
+					title:    'Menus and Mood Setters for Hosting at Home\n',
+					text:     'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam.',
+					tag:      'Food',
+					date:     'April 10, 2022',
+					comments: '0'
+				})
+					a.post-media.post-img( href='#' )
+						+img( 'classic-blog-03-769x431' )
+
+				+post-classic({
+					title:    'Top 10 Tips For Building Loving Relationships',
+					text:     'Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum.',
+					tag:      'Relationships',
+					date:     'April 10, 2022',
+					comments: '0'
+				}).post-classic-boxed
+
+				+post-classic({
+					title:    '10 Useful Morning Habits to Start the Day Off Right',
+					text:     'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.',
+					tag:      'Lifestyle',
+					date:     'April 10, 2022',
+					comments: '0'
+				})( 'data-lightgallery' )
+					a.post-media.video.lightgallery-item( href='https://www.youtube.com/embed/-AhmuMqZB0s' )
+						+img( 'classic-blog-04-769x431' ).video-image
+						.video-link
+							.icon.video-icon.mdi-play
+
+				+pagination([
+					{ prev: true, actionClass: 'disabled' },
+					{ value: '1', actionClass: 'active' },
+					{ value: '2' },
+					{ value: '3' },
+					{ next: true }
+				]).justify-content-center
+
+			.col-md-4.col-xl-3
+				include ../widget/_blog-sidebar-widgets

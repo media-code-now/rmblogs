@@ -1,0 +1,42 @@
+include ../counter/_counter
+
+// Our goals
+section#consultation-form.section-md.bg-transparent
+	.container
+		.row.row-30.justify-content-xl-between
+			.col-md-6.col-xl-5.text-center.text-md-start
+				.image-block
+					+img( 'image-11-357x494' )
+					.image-block-embed
+						+counter({
+							value:     '75',
+							title:     'Cases won'
+						})
+			.col-md-6.col-xl-7.col-xxl-6
+				h2 Our Principles
+				p.big Our success as a law firm is based on our main principles that allow us to help clients consistently meet their legal and business objectives on a timely and cost-effective basis. They also include:
+				.row.row-5.row-content
+					.col-sm-6
+						ul.list.list-marked
+							li.list-item Dedication to clients;
+							li.list-item Teamwork;
+					.col-sm-6
+						ul.list.list-marked
+							li.list-item Legal excellence and integrity;
+							li.list-item Strategic thinking.
+				.divider.divider-sm
+				h4 Get a free consultation
+				form.rd-mailform.rd-form( data-form-output='form-consultation', data-form-type='contact', method='post', action='components/rd-mailform/rd-mailform.php' )
+					.row.row-15.row-gutters-15
+						.col-sm-6
+							.form-group
+								input.form-control( type='text', name='name', placeholder='Your Name*', data-constraints='@Required' )
+						.col-sm-6
+							.form-group
+								input.form-control( type='email', name='email', placeholder='Your E-mail*', data-constraints='@Email @Required' )
+						.col-sm-6.col-md-12.col-lg-6
+							.form-group
+								input.form-control( type='text', name='phone', placeholder='Your Phone*', data-constraints='@PhoneNumber @Required' )
+						.col-sm-6.col-md-12.col-lg-6
+							button.btn.btn-block( type='submit' ) Make an appointment
+				#form-consultation.form-output.snackbar.snackbar-primary

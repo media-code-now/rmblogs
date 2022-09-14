@@ -1,0 +1,68 @@
+include ../blurb/_blurb
+
+// Intro slider
+section.intro.intro-line.context-dark
+	+rd-navbar
+	.intro-line-table
+		.intro-line-row
+			.intro-line-col
+			.intro-line-col.intro-line-col-center
+			.intro-line-col
+
+		.intro-line-row.intro-line-content
+			.intro-line-col
+			.intro-line-col.intro-line-col-center
+			.intro-line-col
+
+		.intro-line-row
+			.intro-line-col
+			.intro-line-col.intro-line-col-center.intro-line-footer
+				.container
+					.row.row-25
+						.col-lg-9.col-xl-7.text-center.text-lg-left
+							+blurb-link-2({
+								iconClass: 'linearicons-compass2',
+								title:     '355 S Grand Ave, Los Angeles, CA 90071',
+								subtitle:  'Feel free to visit our firm’s office at any time.'
+							})
+						.col-lg-3.col-xl-5.text-center.text-lg-end
+							.group-15.group-lg-30
+								a.icon.icon-md.icon-link.icon-link-gray.mdi-facebook( href='#' )
+								a.icon.icon-md.icon-link.icon-link-gray.mdi-linkedin( href='#' )
+								a.icon.icon-md.icon-link.icon-link-gray.mdi-twitter( href='#' )
+			.intro-line-col
+
+	// Swiper slider
+	.swiper-container.swiper-numbered( data-swiper )
+		// Additional required wrapper
+		.swiper-wrapper
+			// Slides
+			.swiper-slide( style='background-image: url( images/background/bg-8-1920x930.jpg )' )
+				.intro-line-container
+					.container
+						.row
+							.col-md-10
+								p.text-decorated.text-decorated-primary-light Providing the best legal assistance & advice since 1999
+								h1 Find great legal help without any stress
+								a.btn.btn-primary-light( href='#' ) Get in Touch
+
+			.swiper-slide( style='background-image: url( images/background/bg-9-1920x930.jpg )' )
+				.intro-line-container
+					.container
+						.row
+							.col-md-10
+								p.text-decorated.text-decorated-primary-light Solving corporate and individual legal issues
+								h1 Reliable legal solutions for you
+								a.btn.btn-primary-light( href='#' ) Get in Touch
+
+			.swiper-slide( style='background-image: url( images/background/bg-4-1920x930.jpg )' )
+				.intro-line-container
+					.container
+						.row
+							.col-md-10
+								p.text-decorated.text-decorated-primary-light Qualified team of lawyers and attorneys always ready to help
+								h1 Get support from professional lawyers
+								a.btn.btn-primary-light( href='#' ) Get in Touch
+
+		// Pagination
+		.swiper-pagination

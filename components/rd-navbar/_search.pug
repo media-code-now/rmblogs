@@ -1,0 +1,13 @@
+.navbar-search
+	.navbar-search-container
+		form.navbar-search-form( action='search-results.html', method='GET', data-rd-search!={
+			output:      '.navbar-search-results',
+			mode:        'live',
+			liveResults: 3,
+			template: '<h5 class="search-title"><a target="_top" href="#{href}" class="search-link">#{title}</a></h5><p>...#{token}...</p>'
+		})
+			input.navbar-search-input( type='text', placeholder='Search...', autocomplete='off', name='s' )
+			button.navbar-search-btn
+				+icon-search
+
+	.navbar-search-results No results

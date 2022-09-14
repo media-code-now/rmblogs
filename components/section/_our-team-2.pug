@@ -1,0 +1,49 @@
+include ../person/_person
+
+// Our team
+section.section-md.bg-900.context-dark.text-center
+	.container
+		h2 Meet Our Team
+		.row.row-30
+			.col-sm-6.col-lg-4
+				+person-boxed({
+					img: 'person/person-2-370x302',
+					author: 'Kate Lee',
+					description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+					position: 'Jr. Managing partner'
+				})
+			.col-sm-6.col-lg-4
+				+person-boxed({
+					img: 'person/person-1-370x302',
+					author: 'Edward Gray',
+					description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco.',
+					position: 'Managing partner'
+				})
+			.col-sm-6.col-lg-4
+				+person-boxed({
+					img: 'person/person-7-370x302',
+					author: 'Oliver Barnett',
+					description: 'Duis aute irure dolor in reprehenderit in voluptate.',
+					position: 'Attorney'
+				})
+			.col-sm-6.col-lg-4
+				+person-boxed({
+					img: 'person/person-3-370x302',
+					author: 'Harry Smith',
+					description: 'Excepteur sint occaecat cupidatat non proident, sunt in.',
+					position: 'Sr. associate'
+				})
+			.col-sm-6.col-lg-4
+				+person-boxed({
+					img: 'person/person-8-370x302',
+					author: 'Scott Wilkins',
+					description: 'Sed ut perspiciatis unde omnis iste natus error sit.',
+					position: 'Associate'
+				})
+			.col-sm-6.col-lg-4
+				+person-boxed({
+					img: 'person/person-5-370x302',
+					author: 'Jill Adams',
+					description: 'Nemo enim ipsam voluptatem quia voluptas sit aspernatur.',
+					position: 'Attorney'
+				})

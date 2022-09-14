@@ -1,0 +1,37 @@
+include ../blurb/_blurb
+
+// About us
+section.section-md.bg-transparent
+	.container
+		.row.row-40.justify-content-between
+			.col-lg-5
+				.text-block-1
+					h2 We bring clients a combination of skills & vast legal experience
+					p.big.mt-4 Here are a few reasons why people all over the world choose us and our services.
+					a.btn.btn-outline( href='our-cases.html' ) Explore cases
+			.col-lg-7.col-xl-6
+				.row.row-25.row-xl-60
+					.col-sm-6
+						+blurb-hover({
+							iconClass: 'linearicons-library2',
+							title:     '20+ years’ experience',
+							text:      'We have been delivering quality legal support and advice for over 20 years.'
+						})
+					.col-sm-6
+						+blurb-hover({
+							iconClass: 'linearicons-shield-check',
+							title:     'Professionalism',
+							text:      'Our associates and attorneys are true professionals in a variety of law fields.'
+						})
+					.col-sm-6
+						+blurb-hover({
+							iconClass: 'linearicons-library2',
+							title:     'Win-win strategy',
+							text:      'The strategy of our legal consultancy guarantees the best results for your business.'
+						})
+					.col-sm-6
+						+blurb-hover({
+							iconClass: 'linearicons-library',
+							title:     'Knowledge base',
+							text:      'All our clients and website visitors get access to a vast legal knowledge base.'
+						})

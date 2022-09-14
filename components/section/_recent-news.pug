@@ -1,0 +1,43 @@
+include ../thumbnail/_thumbnail
+
+// Recent News
+section.section-md.pb-0
+	.container.container-wide
+		h2.text-center Recent News
+		.owl-carousel.owl-carousel-bordered.owl-nav-lg( data-owl= { nav: true, margin: 0 }, data-autoplay='false', data-loop='false', data-items='1', data-sm-items='2', data-lg-items='3', data-xxl-items='4' )
+			+thumbnail-ordered({
+				date: 'April 27',
+				img: 'recent-news-01-423x324',
+				text: 'How to Use Time Effectively: A Key Principle'
+			})
+			+thumbnail-ordered({
+				date: 'May 06',
+				img: 'recent-news-02-423x324',
+				text: 'A Morning Routine: How I Get My Beachy Glow and Sculpted Skin'
+			})
+			+thumbnail-ordered({
+				date: 'May 15',
+				img: 'recent-news-03-423x324',
+				text: 'A Simple Approach to Heartburn Relief and Digestive Comfort'
+			})
+			+thumbnail-ordered({
+				date: 'May 23',
+				img: 'recent-news-04-423x324',
+				text: 'Being Productive: Dissecting the Productivity Formula'
+			})
+
+			+thumbnail-ordered({
+				date: 'May 27',
+				img: 'recent-news-05-423x324',
+				text: 'How to Get More Satisfaction from Your Daily Routine Tasks'
+			})
+			+thumbnail-ordered({
+				date: 'May 29',
+				img: 'recent-news-06-423x324',
+				text: 'Decorating Your Living Room: 12 Useful Tips from an Expert'
+			})
+			+thumbnail-ordered({
+				date: 'April 28',
+				img: 'recent-news-07-423x324',
+				text: 'Summery French-Girl Hair—for Bastille Day and Beyond'
+			})

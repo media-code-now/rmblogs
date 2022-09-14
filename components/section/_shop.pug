@@ -1,0 +1,57 @@
+include ../product/_product
+include ../pagination/_pagination
+
+// Shop
+section.section-md.bg-transparent
+	.container
+		.row.row-40
+			.col-md-8.col-lg-9
+				.row.row-40.row-xl-55
+					.col-6.col-lg-4
+						+product-simple({
+							img: 'product/product-1-270x358',
+							title: 'The Civil Court Practice 2022 (The Green Book)',
+							price: '35.00'
+						})
+					.col-6.col-lg-4
+						+product-simple({
+							img: 'product/product-2-270x358',
+							title: 'Shares and Share Capital under the Companies Act',
+							price: '35.00'
+						})
+					.col-6.col-lg-4
+						+product-simple({
+							img: 'product/product-3-270x358',
+							title: 'Company Law Handbook (3rd Edition)',
+							price: '35.00'
+						})
+
+					.col-6.col-lg-4
+						+product-simple({
+							img: 'product/product-4-270x358',
+							title: 'The Law of Legal Services (Third Edition)',
+							price: '35.00'
+						})
+					.col-6.col-lg-4
+						+product-simple({
+							img: 'product/product-5-270x358',
+							title: 'Disciplinary and Regulatory Proceedings',
+							price: '35.00'
+						})
+					.col-6.col-lg-4
+						+product-simple({
+							img: 'product/product-6-270x358',
+							title: 'Domestic Abuse: Law and Practice (2nd Edition)',
+							price: '35.00'
+						})
+
+				+pagination([
+					{ prev: true, actionClass: 'disabled' },
+					{ value: '1', actionClass: 'active' },
+					{ value: '2' },
+					{ value: '3' },
+					{ next: true }
+				]).justify-content-center
+
+			.col-md-4.col-lg-3
+				include ../widget/_shop-sidebar-widgets

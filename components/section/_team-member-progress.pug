@@ -1,0 +1,37 @@
+include ../quote/_quote
+include ../progress-linear/_progress-liear
+
+// Team member experience
+section.section-md.bg-transparent
+	.container
+		.row.row-30.justify-content-between
+			.col-md-6
+				h2 Achievements
+				p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				p Ut enim ad minim veniam sed do eiusmod tempor. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam sed do eiusmod tempor.
+				ul.list.list-ordered.text-dark
+					li.list-item Best Lifestyle Blogger (2019)
+					li.list-item Blogger of the Year (2022)
+					li.list-item Top 10 Content Creators
+
+			.col-md-6
+				h2 Personal Skills
+				+progress-linear({
+					title: 'Communication',
+					value: '88'
+				})
+
+				+progress-linear({
+					title: 'Time Management',
+					value: '70'
+				})
+
+				+progress-linear({
+					title: 'Flexibility',
+					value: '74'
+				})
+
+				+progress-linear({
+					title: 'Content Writing',
+					value: '68'
+				})

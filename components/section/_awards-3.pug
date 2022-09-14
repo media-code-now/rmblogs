@@ -1,0 +1,39 @@
+include ../blurb/_blurb
+include ../brand/_brand
+
+// Awards
+section.bg-900.context-dark
+	.container
+		.row.align-items-center
+			.col-md-6
+				.section-sm
+					h2.line.line-4
+						span.line-item Read Me on:
+					.row.row-30
+						.col-sm-6.col-md-12.col-lg-6
+							+blurb-hover({
+								iconClass: 'linearicons-trophy2',
+								title:     'Winners for Global Legal Innovation',
+								text:      'Lawex introduced a range of innovations for legal sphere and received an award for it.'
+							})
+						.col-sm-6.col-md-12.col-lg-6
+							+blurb-hover({
+								iconClass: 'linearicons-hammer2',
+								title:     'Experienced Court Performance',
+								text:      'Our team was also awarded for an extensive performance in dealing with cases at court.'
+							})
+			.col-md-6
+				.row-bordered
+					.row.no-gutters
+						.col-6.col-sm-4.col-md-6
+							+brand-hover( 'logo/logo-3-inverse-135x55.png' )
+						.col-6.col-sm-4.col-md-6
+							+brand-hover( 'logo/logo-4-inverse-72x62.png' )
+						.col-6.col-sm-4.col-md-6
+							+brand-hover( 'logo/logo-1-inverse-145x70.png' )
+						.col-6.col-sm-4.col-md-6
+							+brand-hover( 'logo/logo-5-inverse-95x28.png' )
+						.col-6.col-sm-4.col-md-6
+							+brand-hover( 'logo/logo-2-inverse-81x79.png' )
+						.col-6.col-sm-4.col-md-6
+							+brand-hover( 'logo/logo-7-inverse-50x81.png' )

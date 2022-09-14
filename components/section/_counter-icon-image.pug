@@ -1,0 +1,30 @@
+include ../counter/_counter
+
+// Counters
+section.section-md.bg-100.section-creative-bottom
+	.container
+		.section-lg.section-creative-front.bg-image.text-center( style='background-image: url(images/background/bg-6-1171x373.jpg);' )
+			.row.row-30
+				.col-6.col-sm-3
+					+counter({
+						value: '72',
+						title: 'Charges <br>dropped'
+					})
+
+				.col-6.col-sm-3
+					+counter({
+						value: '87',
+						title: 'Cases <br>won'
+					})
+
+				.col-6.col-sm-3
+					+counter({
+						value: '25',
+						title: 'Cases <br>dismissed'
+					})
+
+				.col-6.col-sm-3
+					+counter({
+						value: '32',
+						title: 'Countersuits <br>filed'
+					})

@@ -1,0 +1,16 @@
+extends ../components/base/_skeleton
+include ../components/rd-navbar/_rd-navbar
+include ../components/page-title/_page-title
+
+block variables
+	- pageName = 'Classic blog';
+
+block page
+	+page-title({
+		bgImage: 'images/bg-breadcrumbs-05.jpg',
+		subtitle: 'Read my latest articles and publications'
+	})
+		+rd-navbar
+
+	include ../components/section/_blog-classic
+	include ../components/footer/_footer-subscribe

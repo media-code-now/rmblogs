@@ -1,0 +1,60 @@
+include ../blurb/_blurb
+
+// Intro slider
+section.intro.intro-creative.bg-900.context-dark
+	.intro-creative-decorative
+		.intro-creative-decorative-item
+	.intro-creative-left
+		// Swiper slider
+		.swiper-double-container( data-swiper-double-container )
+			.swiper-container.swiper-double-container-image( data-swiper-double-image )
+				.swiper-wrapper
+					.swiper-slide(style="background-image:url(images/image-11-727x804.jpg)")
+					.swiper-slide(style="background-image:url(images/image-21-727x804.jpg)")
+					.swiper-slide(style="background-image:url(images/image-2-727x804.jpg)")
+
+				.swiper-buttons
+					.swiper-button-next.mdi-chevron-up
+					.swiper-button-prev.mdi-chevron-down
+
+			.swiper-container.swiper-double-container-content( data-swiper-double-content )
+				.swiper-wrapper
+					.swiper-slide
+						.swiper-slide-content
+							h1.text-decorated.text-decorated-thin Solving any legal issues
+							a.btn( href='contact-us.html' ) Get in Touch
+					.swiper-slide
+						.swiper-slide-content
+							h1.text-decorated.text-decorated-thin Global Legal Support
+							a.btn( href='contact-us.html' ) Get in Touch
+					.swiper-slide
+						.swiper-slide-content
+							h1.text-decorated.text-decorated-thin Knowledge & Experience
+							a.btn( href='contact-us.html' ) Get in Touch
+
+	.intro-creative-right
+		.intro-creative-right-inner
+			ul.list.list-sm
+				li.list-item: h4.text-uppercase.text-primary Free Consultation
+				li.list-item: a.link.link-inherit.big2( href='tel:#' ) (843) 213-1319
+				li.list-item: a.link.link-inherit( href='mailto:#' ) service@royal-mushroom.com
+				li.list-item: span 355 S Grand Ave, #[br]Los Angeles, CA 90071
+
+			ul.list.list-divided
+				li.list-item
+					+blurb-link({
+						iconClass: 'linearicons-user-plus',
+						title:     'Book an appointment'
+					})
+				li.list-item
+					+blurb-link({
+						iconClass: 'linearicons-library2',
+						title:     'Practice Areas',
+						link:      'practice.html'
+					})
+				li.list-item
+					+blurb-link({
+						iconClass: 'linearicons-balance',
+						title:     'Recent Cases',
+						link:      'our-cases.html'
+					})

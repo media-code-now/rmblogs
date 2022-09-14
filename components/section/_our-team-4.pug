@@ -1,0 +1,36 @@
+include ../person/_person
+
+// Our team
+section.section-md.bg-100.text-center.bg-overlay
+	.bg-overlay-item.bg-900
+	.container
+		.context-dark
+			h2 Meet Our Team
+		.owl-carousel.owl-content-1.owl-carousel-shadow-2( data-owl= { dots: true }, data-autoplay='false', data-items='1', data-sm-items='2', data-lg-items='3' )
+			+person-boxed({
+				img: 'person/person-2-370x302',
+				author: 'Kate Lee',
+				description: 'Kate is our partner who presented 200+ criminal cases.',
+				position: 'Jr. Managing partner'
+			})
+
+			+person-boxed({
+				img: 'person/person-1-370x302',
+				author: 'Edward Gray',
+				description: 'Edward is our managing partner specializing in Family Law.',
+				position: 'Managing partner'
+			})
+
+			+person-boxed({
+				img: 'person/person-7-370x302',
+				author: 'Oliver Barnett',
+				description: 'Oliver is our attorney with vast experience in entertainment law.',
+				position: 'Attorney'
+			})
+
+			+person-boxed({
+				img: 'person/person-3-370x302',
+				author: 'Harry Smith',
+				description: 'Harry is our senior associate with  experience in admiralty law.',
+				position: 'Sr. associate'
+			})

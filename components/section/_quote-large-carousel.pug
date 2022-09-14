@@ -1,0 +1,30 @@
+include ../quote/_quote
+
+// Practice
+section.section-lg.bg-900.context-dark
+	.container
+		.row.row-40.justify-content-between
+			.col-md-5.col-xxl-4
+				h2.line.line-3
+					span.line-item
+					| We bring clients a combination of #[br.d-none.d-xl-inline]skills & vast experience
+				a.btn.btn-outline( href='our-cases.html' ) View cases
+			.col-md-7
+				.owl-carousel.owl-quote-2( data-owl= { dots: true }, data-items='1' )
+					+quote-md({
+						quote: 'Lawex represented us in a suit against a large company. We were very satisfied with the results. Our settlement was much better than we expected and was completed in a timely manner. The lawyers and staff stayed in close contact with us and were friendly and respectful.',
+						authorName: 'John Doe',
+						authorPosition: 'Client'
+					})
+
+					+quote-md({
+						quote: 'I received great results when utilizing the legal services of Lawex. They understood my circumstances and with their experience in the legal profession were able to get me the results I wanted. Their attorneys were objective, very positive and most of all realistic in solving my issues.',
+						authorName: 'Jane Smith',
+						authorPosition: 'Client'
+					})
+
+					+quote-md({
+						quote: 'Lawex Law Firm were great to work with. Their team set expectations from the beginning and answered my many questions throughout the process. They always took their time to talk to me, and never made me feel like I was being rushed to make a decision.',
+						authorName: 'Edward Harrison',
+						authorPosition: 'Client'
+					})

@@ -1,0 +1,19 @@
+extends ../components/base/_skeleton
+include ../components/rd-navbar/_rd-navbar
+include ../components/page-title/_page-title
+
+block variables
+	-
+		pageName = 'Counters & Progress Bars',
+		pageId = 'counters';
+
+block page
+	+page-title({
+		bgImage: 'images/bg-breadcrumbs-07.jpg'
+	})
+		+rd-navbar
+
+	include ../components/section/_progress-linear-sample
+	include ../components/section/_counter-icon-sample
+	include ../components/section/_countdown-sample
+	include ../components/footer/_footer-subscribe

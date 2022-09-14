@@ -1,0 +1,64 @@
+include ../post/_post
+include ../pagination/_pagination
+
+// Blog grid
+section.section-md.bg-transparent
+	.container
+		.row.row-40.justify-content-xxl-between
+			.col-md-8
+				.row.row-30.row-xl-60.justify-content-center
+					.col-xs-11.col-sm-10.col-md-6
+						+post-line({
+							img:   'grid-blog-01-368x228',
+							tag:   'Interior',
+							title: 'Decorating a Modern Bedroom on a Budget',
+							date:  'November 12, 2022'
+						})
+					.col-xs-11.col-sm-10.col-md-6
+						+post-line({
+							img:   'grid-blog-02-368x228',
+							tag:   'Beauty',
+							title: '15 Top Hair Tips from Top Hollywood Stylists',
+							date:  'November 12, 2022'
+						})
+
+					.col-xs-11.col-sm-10.col-md-6
+						+post-line({
+							img:   'grid-blog-03-368x228',
+							tag:   'Purpose',
+							title: 'Why You Should Plan Your Life on a Decade Level',
+							date:  'November 12, 2022'
+						})
+					.col-xs-11.col-sm-10.col-md-6
+						+post-line({
+							img:   'grid-blog-04-368x228',
+							tag:   'Food',
+							title: 'How to Cook Eggs Perfectly With Every Method',
+							date:  'November 12, 2022'
+						})
+
+					.col-xs-11.col-sm-10.col-md-6
+						+post-line({
+							img:   'grid-blog-05-368x228',
+							tag:   'Travel',
+							title: 'Top Tips For Travelling In The Mountains',
+							date:  'November 12, 2022'
+						})
+					.col-xs-11.col-sm-10.col-md-6
+						+post-line({
+							img:   'grid-blog-06-368x228',
+							tag:   'Food',
+							title: 'Summer Menus and Mood Setters for Hosting at Home',
+							date:  'November 12, 2022'
+						})
+
+				+pagination([
+					{ prev: true, actionClass: 'disabled' },
+					{ value: '1', actionClass: 'active' },
+					{ value: '2' },
+					{ value: '3' },
+					{ next: true }
+				]).justify-content-center
+
+			.col-md-4.col-xl-3
+				include ../widget/_blog-sidebar-widgets
